@@ -1,0 +1,94 @@
+.ability-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.ability-label > a {
+  color: inherit;
+  text-decoration: none;
+}
+.ability-label > a:hover {
+  text-decoration: underline;
+}
+.ability-icon {
+  cursor: help;
+  flex-shrink: 0;
+}
+.ability-icon:focus-visible {
+  outline: 2px solid #c4b5fd;
+  outline-offset: 3px;
+}
+.ability-tooltip-positioner {
+  z-index: 100;
+}
+.ability-tooltip {
+  max-width: min(390px, calc(100vw - 24px));
+  padding: 16px;
+  background: #151926;
+  color: #e6e9f3;
+  border: 1px solid #55516d;
+  border-radius: 10px;
+  box-shadow: 0 15px 55px #0009;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ability-tooltip > strong {
+  display: block;
+  font-size: 16px;
+  color: #d6bcff;
+}
+.ability-tooltip > span,
+.ability-tooltip > small {
+  display: block;
+  color: #acb4c8;
+  font-size: 12px;
+}
+.ability-tooltip p {
+  margin-top: 9px;
+}
+.ability-description {
+  white-space: pre-line;
+  max-height: 320px;
+  overflow: auto;
+}
+.ability-trigger {
+  background: none;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.ability-trigger:hover > span:last-child {
+  text-decoration: underline;
+}
+.ability-trigger:focus-visible {
+  outline: 2px solid #c4b5fd;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+.ability-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d6bcff;
+  margin: 0;
+}
+.ability-source-link {
+  display: block;
+  color: #c4b5fd;
+  text-decoration: underline;
+  margin-top: 14px;
+}
+.ability-close {
+  display: block;
+  margin-top: 12px;
+  padding: 5px 9px;
+  color: #e6e9f3;
+  border: 1px solid #55516d;
+  border-radius: 5px;
+  background: #25283a;
+  cursor: pointer;
+}

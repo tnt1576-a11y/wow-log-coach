@@ -1,0 +1,238 @@
+.cooldown-workspace {
+  min-width: 0;
+}
+.cooldown-controls {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.cooldown-controls label,
+.cooldown-spell-picker > label {
+  display: grid;
+  gap: 7px;
+  font-size: 14px;
+}
+.cooldown-controls select,
+.cooldown-spell-picker input[type='search'] {
+  background: #10131e;
+  color: #e6e9f3;
+  border: 1px solid #44475a;
+  border-radius: 8px;
+  padding: 9px;
+}
+.cooldown-note {
+  color: #aeb8cc;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 14px 0;
+}
+.cooldown-spell-picker {
+  border: 1px solid #34394c;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 16px 0;
+}
+.cooldown-spell-picker summary {
+  cursor: pointer;
+  font-size: 15px;
+}
+.cooldown-spell-picker > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 12px;
+  max-height: 330px;
+  overflow: auto;
+  margin-top: 16px;
+}
+.cooldown-spell-picker > div > label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.cooldown-spell-picker > p {
+  font-size: 14px;
+  color: #aeb8cc;
+  margin-top: 14px;
+}
+.cooldown-scroll {
+  overflow-x: auto;
+  border: 1px solid #34394c;
+  border-radius: 10px;
+  padding: 14px;
+}
+.cooldown-board {
+  min-width: 850px;
+  padding-right: 30px;
+}
+.cooldown-axis,
+.cooldown-lane {
+  display: grid;
+  grid-template-columns: 215px 1fr;
+  gap: 15px;
+}
+.cooldown-axis {
+  font-size: 12px;
+  color: #aeb8cc;
+  height: 34px;
+}
+.cooldown-axis > div {
+  position: relative;
+}
+.cooldown-axis > div > span {
+  position: absolute;
+  transform: translateX(-50%);
+}
+.cooldown-player {
+  margin: 8px 0 22px;
+}
+.cooldown-player > header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #242038;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 8px;
+  color: #e7d6ff;
+  font-size: 15px;
+}
+.cooldown-player > header > span {
+  font-size: 13px;
+  color: #aeb8cc;
+}
+.cooldown-lane {
+  min-height: 82px;
+  align-items: center;
+}
+.cooldown-lane > div:first-child {
+  font-size: 14px;
+}
+.cooldown-track {
+  height: 76px;
+  position: relative;
+  border-bottom: 1px solid #34394c;
+  background-image: linear-gradient(to right, #3b415b55 1px, transparent 1px);
+}
+.cooldown-marker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: #bfc9dc;
+  gap: 3px;
+  z-index: 1;
+}
+.cooldown-marker .game-icon {
+  width: 24px;
+  height: 24px;
+}
+.cooldown-ended {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    #ffffff05 0px,
+    #ffffff05 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+.cooldown-differences {
+  padding: 0 8px 15px;
+  font-size: 14px;
+}
+.cooldown-differences summary {
+  cursor: pointer;
+  color: #c4b5fd;
+}
+.cooldown-differences p {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.comparison-context-note {
+  color: #aeb8cc;
+  font-size: 14px;
+  line-height: 1.6;
+  border: 1px solid #39374e;
+  border-radius: 10px;
+  padding: 12px;
+}
+.coach-tabs {
+  flex-wrap: wrap !important;
+  height: auto !important;
+  gap: 4px !important;
+}
+.coach-tabs [role='tab'] {
+  font-size: 14px !important;
+  padding: 12px !important;
+}
+.cooldown-spell-picker .cooldown-picker-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.cooldown-picker-item > input {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.cooldown-cluster-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  min-width: 18px;
+  padding: 1px 4px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+  background: #6d4ba6;
+  color: #fff;
+  border-radius: 10px;
+  pointer-events: none;
+}
+.cooldown-exact-times {
+  margin: 0 0 14px 230px;
+  font-size: 12px;
+  color: #aeb8cc;
+}
+.cooldown-exact-times > summary {
+  cursor: pointer;
+}
+.cooldown-exact-times ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  list-style: none;
+  padding: 12px 0;
+}
+.cooldown-exact-times li {
+  font-variant-numeric: tabular-nums;
+}
+.cooldown-exact-times time {
+  color: #e5dafc;
+}
+.cooldown-empty-use {
+  display: block;
+  color: #aeb8cc;
+  margin-top: 5px;
+}
+.cooldown-marker {
+  width: 30px;
+}
+.cooldown-track {
+  height: 52px;
+}
+.cooldown-lane {
+  min-height: 62px;
+}

@@ -1,0 +1,36 @@
+.coach-tabs [role='tab']::after {
+  display: none !important;
+}
+.coach-tabs [role='tab'] {
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.coach-tabs [role='tab'][aria-selected='true'] {
+  color: #ede2ff;
+  background: #8b5cf624;
+  border-color: #a78bfa55;
+}
+.report-mobile-navigation {
+  display: none;
+}
+@media (max-width: 640px) {
+  .coach-tabs {
+    display: none !important;
+  }
+  .report-mobile-navigation {
+    display: grid;
+    gap: 8px;
+    margin: 4px 0 18px;
+    font-size: 14px;
+    color: #b9c3d5;
+  }
+  .report-mobile-navigation select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #a78bfa66;
+    border-radius: 9px;
+    background: #161b29;
+    color: #eee8ff;
+    font-size: 16px;
+  }
+}

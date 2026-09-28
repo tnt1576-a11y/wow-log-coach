@@ -1,0 +1,95 @@
+.analysis-loading {
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 12px;
+}
+.analysis-loading header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.analysis-loading h2 {
+  font-size: 1.25rem;
+  font-weight: 650;
+  color: #e8ecf4;
+}
+.analysis-loading p {
+  margin: 0.65rem 0;
+  color: #b7c4d6;
+}
+.analysis-stages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+.analysis-stages span {
+  font-size: 0.875rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #344054;
+  border-radius: 6px;
+  color: #aeb9cb;
+}
+.analysis-stages [data-done='true'] {
+  border-color: #247c76;
+  color: #80dacc;
+}
+.analysis-stages [data-active='true'] {
+  border-color: #a58ad9;
+  background: #2b2240;
+  color: #e2d2ff;
+}
+.analysis-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+.analysis-stats b {
+  color: #65dfed;
+  margin-left: 0.35rem;
+}
+.analysis-help {
+  font-size: 0.875rem;
+}
+.analysis-budget {
+  padding: 0.75rem;
+  background: #172331;
+  border-radius: 6px;
+}
+.analysis-loading summary {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.analysis-log {
+  max-height: 18rem;
+  overflow: auto;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background: #0a1019;
+  font-size: 0.875rem;
+}
+.analysis-log li {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #1b2739;
+  overflow-wrap: anywhere;
+}
+.analysis-log time {
+  color: #879bb5;
+}
+@media (max-width: 520px) {
+  .analysis-loading {
+    padding: 1rem;
+  }
+  .analysis-log li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

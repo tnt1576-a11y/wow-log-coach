@@ -1,0 +1,127 @@
+.defense-evidence-card {
+  margin: 16px 0;
+  padding: 18px;
+  border: 1px solid #ffffff13;
+  border-radius: 12px;
+  background: #0a1320;
+}
+.defense-evidence-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.defense-evidence-heading h4 {
+  margin: 0 0 5px;
+  color: #edf3ff;
+  font-size: 0.95rem;
+}
+.defense-evidence-heading p {
+  margin: 0;
+  color: #9cafc9;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.defense-evidence-badge {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  border: 1px solid #ffffff16;
+  border-radius: 6px;
+  color: #b8c8df;
+  font-size: 0.68rem;
+}
+.defense-source-table {
+  min-width: 470px;
+}
+.defense-source-table th {
+  min-width: 150px;
+}
+.defense-source-table td small,
+.defense-source-name {
+  display: block;
+  margin-top: 5px;
+  color: #9cafc9;
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+.defense-protection-list {
+  display: grid;
+  gap: 10px;
+}
+.defense-protection {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px;
+  border-left: 3px solid #67e8f9;
+  border-radius: 4px;
+  background: #132033;
+}
+.defense-protection[data-external='true'] {
+  border-left-color: #c4b5fd;
+}
+.defense-protection small {
+  display: block;
+  color: #9cafc9;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+.defense-protection-timing {
+  max-width: 45%;
+  text-align: right;
+}
+.defense-protection-timing strong {
+  font:
+    0.78rem var(--font-geist-mono),
+    monospace;
+  color: #d3e0f2;
+}
+.defense-use-evidence {
+  cursor: default;
+  align-items: flex-start;
+}
+.defense-use-main {
+  flex: 1;
+  min-width: 0;
+}
+.defense-use-threats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 8px;
+}
+.defense-use-threats > small {
+  width: 100%;
+  margin: 0;
+}
+.defense-use-threats > span {
+  font-size: 0.75rem;
+}
+.defense-use-evidence > button {
+  flex-shrink: 0;
+}
+.defensive-phase-cast .ability {
+  max-width: 100%;
+}
+@media (max-width: 700px) {
+  .defense-evidence-card {
+    padding: 12px;
+  }
+  .defense-evidence-heading,
+  .defense-protection {
+    flex-direction: column;
+  }
+  .defense-protection-timing {
+    max-width: none;
+    text-align: left;
+  }
+  .defense-use-evidence {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .defense-use-evidence > time {
+    width: 100%;
+  }
+}
