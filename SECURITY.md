@@ -16,12 +16,6 @@ Use [GitHub's private vulnerability reporting](https://github.com/tnt1576-a11y/w
 
 Real analysis sends report queries to Warcraft Logs. Icons and on-demand game details may contact Wowhead; links can open those services. Report responses and completed comparisons are cached in server memory within limits. Exported JSON and screenshots can contain player/report information, so review them before sharing.
 
-## Checks before a public release
-
-Scan both the current tracked files and **all Git history, branches and tags**, plus release archives. This project uses [Gitleaks](https://github.com/gitleaks/gitleaks) in CI with redacted output. A known-value check against local credentials is also useful; it must never print those values. Scanners reduce risk but cannot prove that every possible secret is absent.
-
-If a real credential was ever committed, revoke/rotate it before publication and remove it from all reachable history and release assets. Deleting it only in the latest commit is insufficient. Keep audit reports that might contain findings outside Git.
-
 ## Dependency maintenance
 
 Install with npm ci from the lockfile. Review dependency advisories before upgrading, and rerun tests, runtime checks and the production build. Do not use npm audit fix --force without reviewing its compatibility impact.
